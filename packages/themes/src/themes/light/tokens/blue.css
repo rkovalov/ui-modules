@@ -1,0 +1,20 @@
+/* https://spectrum.adobe.com/page/color-fundamentals/#Color-themes-and-modes */
+/* As the color token name increases in number (e.g., blue-700, blue-800, blue-900),
+the color value’s contrast with the background also increases. Because of this,
+ colors progressively get darker in light theme and lighter in dark themes. */
+/* DARK THEME */
+:root {
+  --nv-color-blue-10: '';
+  --nv-color-blue-20: '';
+  --nv-color-blue-30: '';
+  --nv-color-blue-40: '';
+  --nv-color-blue-50: '';
+  --nv-color-blue-60: '';
+  --nv-color-blue-70: '';
+  --nv-color-blue-80: '';
+  --nv-color-blue-90: #2080F6;  
+  --nv-color-blue-100: #1F69B8;
+  --nv-color-blue-110: '';
+  --nv-color-blue-120: '';
+  --nv-color-blue-130: '';
+}

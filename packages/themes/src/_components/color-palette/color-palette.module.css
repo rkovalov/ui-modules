@@ -1,0 +1,48 @@
+.colorPalette {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.colorList {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.colorItem {
+  /* border: 1px solid gray; */
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.colorInfo {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorHex {
+  width: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.colorShade,
+.colorToken {
+  font-size: 12px;
+}
+
+.colorToken {
+  width: 200px;
+}

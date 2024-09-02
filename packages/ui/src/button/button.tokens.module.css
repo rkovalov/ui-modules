@@ -1,0 +1,20 @@
+:root {
+  /* brand config */
+  --nv-button-background: var(--nv-brand-color-90);
+  --nv-button-background-hovered: var(--nv-brand-color-100);
+  --nv-button-border-color: var(--nv-brand-color-90);
+  /* brand config */
+
+  --nv-button-background-disabled: var(--nv-color-gray-neutral-30);
+  --nv-button-text-color: var(--nv-color-white-100);
+  --nv-button-text-color-disabled: var(--nv-color-gray-neutral-70);
+
+  --nv-button-height-xxs: var(--nv-sizing-xxs);
+  --nv-button-height-xs: var(--nv-sizing-xs);
+  --nv-button-height-sm: var(--nv-sizing-sm);
+  --nv-button-height-md: var(--nv-sizing-md);
+  --nv-button-height-lg: var(--nv-sizing-lg);
+
+  /* --nv-button-padding
+  8px, 12px, 8px, 12px */
+}

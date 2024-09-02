@@ -1,0 +1,9 @@
+:root {
+  --nv-z-index-deepdive: -9999;
+  --nv-z-index-sticky: 100;
+  --nv-z-index-drawer: 700;
+  --nv-z-index-dialog: 800;
+  --nv-z-index-dropdown: 900;
+  --nv-z-index-toast: 950;
+  --nv-z-index-tooltip: 1000;
+}

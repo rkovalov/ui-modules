@@ -1,0 +1,25 @@
+/* Spacing tokens are used for padding, margins, and position coordinates.*/
+
+
+/* 6px, 8px, 6px, 8px/ */
+:root {
+  --nv-spacing-xxxs: 0.125rem;
+  --nv-spacing-xxs: 0.25rem;
+  --nv-spacing-xs: 0.5rem;
+  --nv-spacing-sm: 0.75rem;
+  --nv-spacing-md: 1rem;
+  --nv-spacing-lg: 1.25rem;
+  --nv-spacing-xl: 1.75rem;
+  --nv-spacing-xxl: 2.25rem;
+  --nv-spacing-xxxl: 3rem;
+  --nv-spacing-xxxxl: 4.5rem;
+}
+/* 
+width: Fixed (130px)px;
+height: Hug (28px)px;
+top: 45px;
+left: 40px;
+padding: 6px 8px 6px 8px;
+gap: 8px;
+border-radius: 8px 0px 0px 0px;
+opacity: 0px; */

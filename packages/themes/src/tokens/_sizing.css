@@ -1,0 +1,11 @@
+/* Use sizing tokens to set elements to our sizing scale. Size tokens can be used for the width and height properties. Square tokens are used for both width and height. */
+
+:root {
+  --nv-sizing-xxs: 1.75rem;
+  --nv-sizing-xs: 2rem;
+  --nv-sizing-sm: 2.25rem;
+  --nv-sizing-md: 2.5rem;
+  --nv-sizing-lg: 2.75rem;
+  --nv-sizing-xl: 3rem;
+  --nv-sizing-xxlg: 3.25rem;
+}

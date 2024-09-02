@@ -1,0 +1,7 @@
+:root {
+  --nv-transition-x-slow: 1000ms;
+  --nv-transition-slow: 500ms;
+  --nv-transition-medium: 250ms;
+  --nv-transition-fast: 150ms;
+  --nv-transition-x-fast: 50ms;
+}

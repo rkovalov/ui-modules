@@ -1,0 +1,7 @@
+/* https://spectrum.adobe.com/page/color-fundamentals/#Color-themes-and-modes */
+/* As the color token name increases in number (e.g., blue-700, blue-800, blue-900),
+the color value’s contrast with the background also increases. Because of this,
+ colors progressively get darker in light theme and lighter in dark themes. */
+
+/* Light THEME */
+@import './tokens/all.css';

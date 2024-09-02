@@ -1,0 +1,5 @@
+{
+  "extends": "@ui-modules/typescript-config/react-library.json",
+  "include": ["src", "tsconfig.lint.json", "postcss.config.mjs"],
+  "exclude": ["node_modules", "dist"]
+}

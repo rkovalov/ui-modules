@@ -1,0 +1,8 @@
+:root {
+  --nv-border-radius-sm: 0.125rem;
+  --nv-border-radius-md: 0.25rem;
+  --nv-border-radius-lg: 0.5rem;
+  --nv-border-radius-xl: 1rem;
+  --nv-border-radius-circle: 50%;
+  --nv-border-radius-pill: 9999px;
+}
