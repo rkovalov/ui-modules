@@ -26,5 +26,5 @@ jobs:
       run: pnpm run format:css
     - name: Test
       run: pnpm run test
-    - name: Test
+    - name: Build
       run: pnpm run build
