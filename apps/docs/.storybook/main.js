@@ -21,7 +21,7 @@ const config = {
     },
     {
       directory: '../../../packages/utils/src',
-      titlePrefix: `Themes:${UtilsPackageJson.version}/`,
+      titlePrefix: `Utils:${UtilsPackageJson.version}/`,
     },
   ],
   addons: [
