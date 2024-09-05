@@ -41,7 +41,7 @@
     "*.json": ["biome check --write --no-errors-on-unmatched"],
     "*.css": ["prettier --check --write"]
   },
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@9.6.0",
   "engines": {
     "node": ">=20",
     "pnpm": ">=9"
