@@ -18,7 +18,7 @@ type Story = StoryObj<typeof Icon>;
 export const Secondary: Story = {
   parameters: {
     design: {
-      url: 'https://www.figma.com/design/sREHUZ7pk6Kmxhky4P75Zm/Design-System---UI-ver-1.0?node-id=1-634&node-type=CANVAS&t=Ks9X3ZP9RtDopXPZ-0',
+      url: 'https://www.figma.com/design/uccwxEcuMtvHhPTPMp7YKm/Figma-basics',
     },
   },
   render: (props: React.ComponentProps<typeof Icon>) => <Icon {...props} />,

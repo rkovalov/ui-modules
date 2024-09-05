@@ -33,7 +33,7 @@ type Story = StoryObj<typeof Template>;
 export const Primary: Story = {
   parameters: {
     design: {
-      url: 'https://www.figma.com/design/sREHUZ7pk6Kmxhky4P75Zm/Design-System---UI-ver-1.0?node-id=1-1932&t=LRLWPAaPAmVsnFyX-0',
+      url: 'https://www.figma.com/design/uccwxEcuMtvHhPTPMp7YKm/Figma-basics',
     },
   },
   render: (props: any) => <Template {...props} />,
