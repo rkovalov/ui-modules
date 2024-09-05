@@ -51,9 +51,6 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@ui-modules/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
       '@storybook/addon-actions':
         specifier: ^8.2.9
         version: 8.2.9(storybook@8.2.9(@babel/preset-env@7.25.3(@babel/core@7.25.2)))
@@ -75,6 +72,9 @@ importers:
       '@storybook/react-vite':
         specifier: ^8.2.9
         version: 8.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.20.0)(storybook@8.2.9(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(typescript@5.5.4)(vite@5.4.0(@types/node@20.11.24)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0))
+      '@ui-modules/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
       '@vitejs/plugin-react':
         specifier: ^4.3.1
         version: 4.3.1(vite@5.4.0(@types/node@20.11.24)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0))
@@ -145,12 +145,6 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1
     devDependencies:
-      '@ui-modules/biome-config':
-        specifier: workspace:*
-        version: link:../biome-config
-      '@ui-modules/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
       '@storybook/blocks':
         specifier: ^8.2.9
         version: 8.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.2.9(@babel/preset-env@7.25.3(@babel/core@7.25.2)))
@@ -169,6 +163,12 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.19
         version: 18.2.19
+      '@ui-modules/biome-config':
+        specifier: workspace:*
+        version: link:../biome-config
+      '@ui-modules/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
       '@vitejs/plugin-react':
         specifier: ^4.3.1
         version: 4.3.1(vite@5.4.0(@types/node@20.11.24)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0))
@@ -212,15 +212,6 @@ importers:
       '@biomejs/biome':
         specifier: ^1.8.3
         version: 1.8.3
-      '@ui-modules/biome-config':
-        specifier: workspace:*
-        version: link:../biome-config
-      '@ui-modules/prettier-config':
-        specifier: workspace:*
-        version: link:../prettier-config
-      '@ui-modules/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
       '@storybook/react':
         specifier: ^8.2.9
         version: 8.2.9(react-dom@18.3.1(react@18.2.0))(react@18.2.0)(storybook@8.2.9(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(typescript@5.5.4)
@@ -242,6 +233,15 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.19
         version: 18.2.19
+      '@ui-modules/biome-config':
+        specifier: workspace:*
+        version: link:../biome-config
+      '@ui-modules/prettier-config':
+        specifier: workspace:*
+        version: link:../prettier-config
+      '@ui-modules/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
       '@vitejs/plugin-react':
         specifier: ^4.3.1
         version: 4.3.1(vite@5.4.0(@types/node@20.11.24)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0))
@@ -254,6 +254,9 @@ importers:
       postcss-import:
         specifier: ^16.1.0
         version: 16.1.0(postcss@8.4.41)
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
       tsup:
         specifier: ^8.2.4
         version: 8.2.4(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0)
@@ -279,12 +282,6 @@ importers:
       '@biomejs/biome':
         specifier: ^1.8.3
         version: 1.8.3
-      '@ui-modules/biome-config':
-        specifier: workspace:*
-        version: link:../biome-config
-      '@ui-modules/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
       '@storybook/react':
         specifier: ^8.2.9
         version: 8.2.9(react-dom@18.3.1(react@18.2.0))(react@18.2.0)(storybook@8.2.9(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(typescript@5.5.4)
@@ -300,6 +297,12 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.19
         version: 18.2.19
+      '@ui-modules/biome-config':
+        specifier: workspace:*
+        version: link:../biome-config
+      '@ui-modules/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.41)

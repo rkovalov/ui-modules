@@ -15,10 +15,11 @@
     "test": "vitest",
     "test:watch": "vitest --watch",
     "test:coverage": "vitest run --coverage",
-    "lint": "biome lint .",
     "lint:eslint:example": "eslint . --max-warnings 0",
-    "format": "pnpm run format:css && pnpx biome format .",
-    "format:css": "prettier ./src/**/*.css --write",
+    "format:css": "prettier --check .",
+    "lint": "biome lint .",
+    "format": "biome format .",
+    "lint:format": "biome check .",
     "clean": "rm -rf node_modules",
     "generate:component": "turbo gen react-component"
   },
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "jsdom": "^25.0.0",
+    "prettier": "^3.3.3",
     "@testing-library/react": "^16.0.0",
     "@testing-library/jest-dom":"^6.5.0",
     "@biomejs/biome": "^1.8.3",

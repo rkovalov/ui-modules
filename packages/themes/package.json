@@ -24,6 +24,8 @@
     "test:coverage": "vitest run --coverage",
     "lint": "biome lint .",
     "lint:eslint:example": "eslint . --max-warnings 0",
+    "lint:format": "biome check .",
+    "format:css": "prettier --check .",
     "format": "biome format .",
     "clean": "rm -rf node_modules"
   },

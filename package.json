@@ -13,11 +13,14 @@
     "version-packages": "changeset version",
     "prerelease": "turbo run build --filter=docs^...",
     "release": "changeset publish",
-    "format:prettier:example": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "format": "turbo format --",
+    "format": "turbo format",
     "format:fix": "turbo format -- --write",
     "lint": "turbo lint",
     "lint:fix": "turbo lint -- --write",
+    "lint:format": "turbo format:lint",
+    "lint:format:fix": "turbo format:lint -- --write",
+    "format:css": "turbo format:css",
+    "format:css:fix": "turbo format:css -- --write",
     "typecheck": "turbo typecheck",
     "type-coverage": "type-coverage --detail",
     "prepare": "husky"
@@ -34,9 +37,9 @@
     "typescript": "^5.5.4"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,css,md}": ["pnpm run lint:fix --", "pnpm run format:fix --"],
-    "*.css": ["pnpm run format:fix --"],
-    "*.json": ["pnpm run format:fix --"]
+    "*.{js,ts,tsx,css,md}": ["biome check --write --no-errors-on-unmatched"],
+    "*.json": ["biome check --write --no-errors-on-unmatched"],
+    "*.css": ["prettier --check --write"]
   },
   "packageManager": "pnpm@8.15.6",
   "engines": {
