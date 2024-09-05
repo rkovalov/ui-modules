@@ -1,8 +1,6 @@
-
 /* --nv-brand-{proprtyNmae} */
 
 :root {
-
   --nv-brand-color-90: var(--nv-color-blue-90);
   --nv-brand-color-100: var(--nv-color-blue-100);
   --nv-brand-color-text: "";

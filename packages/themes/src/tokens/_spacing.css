@@ -1,6 +1,5 @@
 /* Spacing tokens are used for padding, margins, and position coordinates.*/
 
-
 /* 6px, 8px, 6px, 8px/ */
 :root {
   --nv-spacing-xxxs: 0.125rem;
