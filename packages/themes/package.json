@@ -21,7 +21,6 @@
     "test:watch": "vitest --watch",
     "test:coverage": "vitest run --coverage",
     "lint": "biome lint .",
-    "lint:eslint:example": "eslint . --max-warnings 0",
     "format:lint": "biome check .",
     "format": "biome format .",
     "clean": "rm -rf node_modules"
