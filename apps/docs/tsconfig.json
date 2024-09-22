@@ -1,5 +1,5 @@
 {
-  "extends": "@ui-modules/typescript-config/react-app.json",
+  "extends": "@ui-modules/typescript-config/react-app",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }
