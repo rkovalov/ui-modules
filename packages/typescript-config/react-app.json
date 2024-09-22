@@ -3,14 +3,14 @@
   "display": "react-app",
   "extends": "./base.json",
   "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "allowJs": true,
     "declaration": false,
     "declarationMap": false,
     "incremental": true,
     "jsx": "preserve",
-    "lib": ["dom", "dom.iterable", "esnext"],
     "noEmit": true,
-    "resolveJsonModule": true,
     "target": "es5"
   }
 }
