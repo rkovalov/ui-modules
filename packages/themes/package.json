@@ -13,9 +13,7 @@
     "./dark.css": "./dist/themes/dark/dark.css",
     "./light.css": "./dist/themes/light/light.css"
   },
-  "sideEffects": [
-    "*.css"
-  ],
+  "sideEffects": ["*.css"],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -24,12 +22,12 @@
     "test:coverage": "vitest run --coverage",
     "lint": "biome lint .",
     "lint:eslint:example": "eslint . --max-warnings 0",
-    "lint:format": "biome check .",
-    "format:css": "prettier --check .",
+    "format:lint": "biome check .",
     "format": "biome format .",
     "clean": "rm -rf node_modules"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.2",
     "@testing-library/react": "^16.0.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -37,7 +35,7 @@
     "postcss-import": "^16.1.0",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
-    "vitest":"^2.0.5",
+    "vitest": "^2.0.5",
     "@storybook/react": "^8.2.9",
     "@storybook/blocks": "^8.2.9",
     "@ui-modules/biome-config": "workspace:*",

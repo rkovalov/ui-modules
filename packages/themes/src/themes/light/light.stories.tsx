@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ColorPalette } from '../../_components/color-palette';
-import { CSSContent, useCssContent } from '../../_components/css-content';
+import { useCssContent } from '../../_components/css-content';
 
 const Template: React.FC = () => {
   // @ts-ignore

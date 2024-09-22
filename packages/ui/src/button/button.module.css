@@ -1,4 +1,4 @@
-@import "./button.tokens.module.css";
+@import './button.tokens.module.css';
 
 .base {
   color: var(--nv-button-text-color);

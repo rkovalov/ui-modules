@@ -21,10 +21,8 @@ jobs:
     - name: Install dependencies
       run: pnpm install
     - name: Lint And Format
-      run: pnpm run lint:format
-    - name: Format Styles
-      run: pnpm run format:css
+      run: pnpm format:lint
     - name: Test
-      run: pnpm run test
+      run: pnpm test
     - name: Build
-      run: pnpm run build
+      run: pnpm build

@@ -16,18 +16,15 @@
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "files": [
-    "dist",
-    "README.md"
-  ],
+  "files": ["dist", "README.md"],
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "lint": "biome lint .",
-    "lint:eslint:example": "eslint . --max-warnings 0",
     "format": "biome format . ",
+    "format:lint": "biome check .",
     "clean": "rm -rf node_modules",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
@@ -38,14 +35,14 @@
     "date-fns": "^3.6.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
+    "@biomejs/biome": "^1.9.2",
     "autoprefixer": "^10.4.20",
     "vitest": "^2.0.5",
     "@storybook/react": "^8.2.9",
     "@ui-modules/typescript-config": "workspace:*",
     "@ui-modules/biome-config": "workspace:*",
     "@turbo/gen": "^1.12.4",
-    "@types/node": "^20.11.24",
+    "@types/node": "^22.5.5",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "typescript": "^5.5.4",
