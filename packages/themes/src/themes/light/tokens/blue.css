@@ -4,17 +4,17 @@ the color value’s contrast with the background also increases. Because of this
  colors progressively get darker in light theme and lighter in dark themes. */
 /* DARK THEME */
 :root {
-  --nv-color-blue-10: "";
-  --nv-color-blue-20: "";
-  --nv-color-blue-30: "";
-  --nv-color-blue-40: "";
-  --nv-color-blue-50: "";
-  --nv-color-blue-60: "";
-  --nv-color-blue-70: "";
-  --nv-color-blue-80: "";
+  --nv-color-blue-10: '';
+  --nv-color-blue-20: '';
+  --nv-color-blue-30: '';
+  --nv-color-blue-40: '';
+  --nv-color-blue-50: '';
+  --nv-color-blue-60: '';
+  --nv-color-blue-70: '';
+  --nv-color-blue-80: '';
   --nv-color-blue-90: #2080f6;
   --nv-color-blue-100: #1f69b8;
-  --nv-color-blue-110: "";
-  --nv-color-blue-120: "";
-  --nv-color-blue-130: "";
+  --nv-color-blue-110: '';
+  --nv-color-blue-120: '';
+  --nv-color-blue-130: '';
 }
