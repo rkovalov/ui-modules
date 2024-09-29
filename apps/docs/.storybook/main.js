@@ -1,7 +1,7 @@
 import { dirname, join, resolve } from 'node:path';
-import ThemePackageJson from '../../../packages/themes/package.json';
-import UIPackageJson from '../../../packages/ui/package.json';
-import UtilsPackageJson from '../../../packages/utils/package.json';
+import ThemePackageJson from '../../../packages/p-themes/package.json';
+import UIPackageJson from '../../../packages/p-ui/package.json';
+import UtilsPackageJson from '../../../packages/p-utils/package.json';
 
 function getAbsolutePath(value) {
   return dirname(require.resolve(join(value, 'package.json')));
@@ -12,15 +12,15 @@ const config = {
     '../stories/**/*.stories.tsx',
     // '../../../packages/*/src/**/*.stories.tsx',
     {
-      directory: '../../../packages/ui/src',
+      directory: '../../../packages/p-ui/src',
       titlePrefix: `UI:${UIPackageJson.version}/`,
     },
     {
-      directory: '../../../packages/themes/src',
+      directory: '../../../packages/p-themes/src',
       titlePrefix: `Themes:${ThemePackageJson.version}/`,
     },
     {
-      directory: '../../../packages/utils/src',
+      directory: '../../../packages/p-utils/src',
       titlePrefix: `Utils:${UtilsPackageJson.version}/`,
     },
   ],
@@ -46,19 +46,19 @@ const config = {
         alias: [
           {
             find: '@ui-modules/ui',
-            replacement: resolve(__dirname, '../../../packages/ui'),
+            replacement: resolve(__dirname, '../../../packages/p-ui'),
           },
           {
             find: '@ui-modules/themes/tokens.css',
-            replacement: resolve(__dirname, '../../../packages/themes/dist/tokens/all.css'),
+            replacement: resolve(__dirname, '../../../packages/p-themes/dist/tokens/all.css'),
           },
           {
             find: '@ui-modules/themes/light.css',
-            replacement: resolve(__dirname, '../../../packages/themes/dist/themes/light/light.css'),
+            replacement: resolve(__dirname, '../../../packages/p-themes/dist/themes/light/light.css'),
           },
           {
             find: '@ui-modules/themes/brand-tokens.css',
-            replacement: resolve(__dirname, '../../../packages/themes/dist/themes/brand-tokens.css'),
+            replacement: resolve(__dirname, '../../../packages/p-themes/dist/themes/brand-tokens.css'),
           },
         ],
       },

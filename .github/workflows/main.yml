@@ -20,11 +20,16 @@ jobs:
         cache: 'pnpm'
     - name: Install dependencies
       run: pnpm install
+    - name: Check deps
+      run: pnpm check:dependencies  
+    - name: Check spell
+      run: pnpm check:spell --no-progress 2>&1
     - name: Lint And Format
       run: pnpm format:lint
     - name: Test
       run: pnpm test
     - name: Build
       run: pnpm build
-    - name: Build
-      run: pnpm typecheck
+    - name: Check types
+      run: pnpm check:types
+    
