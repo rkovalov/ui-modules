@@ -2,9 +2,7 @@
   "name": "@ui-modules/ui",
   "version": "0.0.0",
   "private": true,
-  "sideEffects": [
-    "*.css"
-  ],
+  "sideEffects": ["*.css"],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

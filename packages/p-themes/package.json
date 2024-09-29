@@ -2,9 +2,7 @@
   "name": "@ui-modules/themes",
   "version": "0.0.0",
   "private": true,
-  "sideEffects": [
-    "*.css"
-  ],
+  "sideEffects": ["*.css"],
   "exports": {
     "./styles/*": "./dist/styles/*",
     "./tokens.css": "./dist/tokens/all.css",
