@@ -21,7 +21,9 @@ jobs:
     - name: Install dependencies
       run: pnpm install
     - name: Check deps
-      run: pnpm check:dependencies  
+      run: pnpm check:dependencies
+    - name: Check deps duplications
+      run: pnpm dedupe --check
     - name: Check spell
       run: pnpm check:spell --no-progress 2>&1
     - name: Lint And Format
