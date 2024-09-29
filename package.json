@@ -5,6 +5,8 @@
   "scripts": {
     "build": "turbo build",
     "changeset": "changeset",
+    "changeset:release": "changeset publish",
+    "changeset:version": "changeset version",
     "check:dependencies": "check-dependency-version-consistency .",
     "check:spell": "cspell -c ./cspell/cspell.config.cjs",
     "check:types": "turbo check:types",
@@ -21,13 +23,11 @@
     "lint:fix": "turbo lint -- --write",
     "prepare": "simple-git-hooks",
     "prerelease": "turbo run build --filter=docs^...",
-    "release": "changeset publish",
     "sort-package-json": "sort-package-json \"./package.json\" \"./packages/*/package.json\" \"./apps/*/package.json\"",
     "test": "turbo test",
     "test:ui": "vitest --ui",
     "test:watch": "turbo test:watch",
-    "type-coverage": "type-coverage --detail",
-    "version-packages": "changeset version"
+    "type-coverage": "type-coverage --detail"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm nano-staged",
