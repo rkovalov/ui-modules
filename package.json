@@ -32,10 +32,14 @@
     "commit-msg": "pnpm commitlint --edit"
   },
   "nano-staged": {
-    "*package.json": [
+    "*/package.json": [
       "biome check --write --no-errors-on-unmatched",
-      "pnpm check:dependencies",
       "sort-package-json"
+    ],
+    "package.json": [
+      "biome check --write --no-errors-on-unmatched",
+      "sort-package-json",
+      "pnpm check:dependencies"
     ],
     "pnpm-lock.yaml": "pnpm dedupe --check",
     "*.{js,ts,tsx,css,md,json}": [
