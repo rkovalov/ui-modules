@@ -24,7 +24,7 @@
     "release": "changeset publish",
     "sort-package-json": "sort-package-json \"./package.json\" \"./packages/*/package.json\" \"./apps/*/package.json\"",
     "test": "turbo test",
-    "test:vitest:ui": "vitest --ui",
+    "test:ui": "vitest --ui",
     "test:watch": "turbo test:watch",
     "type-coverage": "type-coverage --detail",
     "version-packages": "changeset version"
