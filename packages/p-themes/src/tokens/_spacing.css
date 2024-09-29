@@ -1,24 +1,25 @@
 /* Spacing tokens are used for padding, margins, and position coordinates.*/
-
-/* 6px, 8px, 6px, 8px/ */
+/* Based on root font size 16px step is 2px */
 :root {
-  --nv-spacing-xxxs: 0.125rem;
-  --nv-spacing-xxs: 0.25rem;
-  --nv-spacing-xs: 0.5rem;
-  --nv-spacing-sm: 0.75rem;
-  --nv-spacing-md: 1rem;
-  --nv-spacing-lg: 1.25rem;
-  --nv-spacing-xl: 1.75rem;
-  --nv-spacing-xxl: 2.25rem;
-  --nv-spacing-xxxl: 3rem;
-  --nv-spacing-xxxxl: 4.5rem;
+  --nv-spacing-0: 0;
+  --nv-spacing-1: 0.125rem;
+  --nv-spacing-2: 0.25rem;
+  --nv-spacing-3: 0.375rem;
+  --nv-spacing-4: 0.5rem;
+  --nv-spacing-5: 0.625rem;
+  --nv-spacing-6: 0.75rem;
+  --nv-spacing-7: 0.875rem;
+  --nv-spacing-8: 1rem;
+  --nv-spacing-9: 1.25rem;
+  --nv-spacing-10: 1.5rem;
+  --nv-spacing-11: 1.75rem;
+  --nv-spacing-12: 2rem;
+  --nv-spacing-13: 2.25rem;
+  --nv-spacing-14: 2.5rem;
+  --nv-spacing-15: 2.75rem;
+  --nv-spacing-16: 3rem;
+  --nv-spacing-17: 3.25rem;
+  --nv-spacing-18: 3.5rem;
+  --nv-spacing-19: 3.75rem;
+  --nv-spacing-20: 4rem;
 }
-/* 
-width: Fixed (130px)px;
-height: Hug (28px)px;
-top: 45px;
-left: 40px;
-padding: 6px 8px 6px 8px;
-gap: 8px;
-border-radius: 8px 0px 0px 0px;
-opacity: 0px; */

@@ -1,11 +1,26 @@
 /* Use sizing tokens to set elements to our sizing scale. Size tokens can be used for the width and height properties. Square tokens are used for both width and height. */
+/* Based on root font size 16px step is 4px */
 
 :root {
-  --nv-sizing-xxs: 1.75rem;
-  --nv-sizing-xs: 2rem;
-  --nv-sizing-sm: 2.25rem;
-  --nv-sizing-md: 2.5rem;
-  --nv-sizing-lg: 2.75rem;
-  --nv-sizing-xl: 3rem;
-  --nv-sizing-xxlg: 3.25rem;
+  --nv-sizing-0: 0;
+  --nv-sizing-1: 0.25rem;
+  --nv-sizing-2: 0.5rem;
+  --nv-sizing-3: 0.75rem;
+  --nv-sizing-4: 1rem;
+  --nv-sizing-5: 1.25rem;
+  --nv-sizing-6: 1.5rem;
+  --nv-sizing-7: 1.75rem;
+  --nv-sizing-8: 2rem;
+  --nv-sizing-9: 2.25rem;
+  --nv-sizing-10: 2.5rem;
+  --nv-sizing-11: 2.75rem;
+  --nv-sizing-12: 3rem;
+  --nv-sizing-13: 3.25rem;
+  --nv-sizing-14: 3.5rem;
+  --nv-sizing-15: 3.75rem;
+  --nv-sizing-16: 4rem;
+  --nv-sizing-17: 4.25rem;
+  --nv-sizing-18: 4.5rem;
+  --nv-sizing-19: 4.75rem;
+  --nv-sizing-20: 5rem;
 }
