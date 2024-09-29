@@ -1,14 +1,19 @@
 {
-  "name": "@ui-modules/ui",
+  "name": "@ui-modules/themes",
   "version": "0.0.0",
   "private": true,
+  "files": [],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "styles": "./dist/styles",
-  "sideEffects": [
-    "*.css"
-  ],
+  "exports": {
+    "./styles/*": "./dist/styles/*",
+    "./tokens.css": "./dist/tokens/all.css",
+    "./dark.css": "./dist/themes/dark/dark.css",
+    "./light.css": "./dist/themes/light/light.css"
+  },
+  "sideEffects": ["*.css"],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -16,37 +21,30 @@
     "test:watch": "vitest --watch",
     "test:coverage": "vitest run --coverage",
     "lint": "biome lint .",
-    "format": "biome format .",
     "format:lint": "biome check .",
+    "format": "biome format .",
     "clean": "rm -rf node_modules",
-    "typecheck": "tsc --noEmit",
-    "generate:component": "turbo gen react-component"
-  },
-  "dependencies": {
-    "react-aria-components": "^1.3.3",
-    "lucide-react": "^0.436.0",
-    "class-variance-authority": "^0.7.0"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "jsdom": "^25.0.0",
+    "@biomejs/biome": "^1.9.2",
     "@testing-library/react": "^16.0.0",
     "@testing-library/jest-dom": "^6.5.0",
-    "@biomejs/biome": "^1.9.2",
-    "vitest": "^2.1.1",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",
-    "@storybook/react": "^8.2.9",
     "postcss-import": "^16.1.0",
-    "@ui-modules/typescript-config": "workspace:*",
+    "tsup": "^8.2.4",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1",
+    "@storybook/react": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
     "@ui-modules/biome-config": "workspace:*",
-    "@turbo/gen": "^1.12.4",
-    "@types/node": "^22.5.5",
+    "@ui-modules/typescript-config": "workspace:*",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
-    "typescript": "^5.6.2",
-    "tsup": "^8.2.4"
+    "@types/node": "^22.5.5"
   },
   "peerDependencies": {
-    "react": ">=18"
+    "react": "^18.3.1"
   }
 }
