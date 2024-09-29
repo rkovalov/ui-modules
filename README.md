@@ -1,5 +1,8 @@
 # Turborepo UI Modules
 
+[![.github/workflows/main.yml](https://github.com/rkovalov/ui-modules/actions/workflows/main.yml/badge.svg)](https://github.com/rkovalov/ui-modules/actions/workflows/main.yml)
+
+
 This guide explains how to use a React design system starter powered by:
 
 - 🏎 [Turborepo](https://turbo.build/repo) — High-performance build system for Monorepos
