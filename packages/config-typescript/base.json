@@ -17,7 +17,9 @@
     "strict": true,
     "types": ["node", "vitest/globals"],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/dist": ["dist/"],
+      "@/dist/*": ["dist/*"],
+      "@/*": ["src/*"]
     },
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },

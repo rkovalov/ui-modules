@@ -12,11 +12,12 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": [],
+  "files": ["dist", "tsconfig.json", "package.json"],
   "scripts": {
     "build": "tsup",
     "check:types": "tsc --noEmit",
-    "clean": "rm -rf node_modules",
+    "check:types:source": "tsc --noEmit --project tsconfig.source.json",
+    "clean": "rm -rf node_modules dist",
     "dev": "tsup --watch",
     "format": "biome format .",
     "format:lint": "biome check .",
@@ -30,7 +31,7 @@
     "@storybook/blocks": "^8.3.4",
     "@storybook/react": "^8.3.4",
     "@testing-library/jest-dom": "^6.5.0",
-    "@testing-library/react": "^16.0.0",
+    "@testing-library/react": "^16.0.1",
     "@types/node": "^22.7.4",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
@@ -44,7 +45,8 @@
     "vitest": "^2.1.1"
   },
   "peerDependencies": {
-    "react": "^18.3.1"
+    "react": ">=18",
+    "react-dom": ">=18"
   },
   "styles": "./dist/styles"
 }

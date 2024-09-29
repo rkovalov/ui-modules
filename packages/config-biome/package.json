@@ -3,11 +3,11 @@
   "version": "0.0.5",
   "private": false,
   "type": "module",
-  "files": ["base.json", "library.json", "app.json", "package.json", "README.md"],
   "exports": {
     "./library": "./library.json",
     "./app": "./app.json"
   },
+  "files": ["base.json", "library.json", "app.json", "package.json", "README.md"],
   "devDependencies": {
     "@biomejs/biome": "^1.9.2"
   },
