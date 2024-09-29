@@ -37,7 +37,10 @@
     "*/package.json": ["sort-package-json", "biome check --write --no-errors-on-unmatched"],
     "package.json": ["sort-package-json", "biome check --write --no-errors-on-unmatched", "pnpm check:dependencies"],
     "pnpm-lock.yaml": "pnpm dedupe --check",
-    "*.{js,ts,tsx,css,md,json}": ["biome check --write --no-errors-on-unmatched"]
+    "*.{js,ts,tsx,css,md,json}": [
+      "biome check --write --no-errors-on-unmatched",
+      "pnpm check:spell --no-progress --show-suggestions --no-must-find-files --show-context"
+    ]
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.2",
