@@ -1,36 +1,36 @@
 {
   "name": "docs",
   "version": "0.0.0",
-  "type": "module",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "storybook dev -p 6006",
     "build": "storybook build --docs --output-dir dist",
-    "preview-storybook": "serve storybook-static",
     "check:types": "tsc --noEmit",
-    "clean": "rm -rf .turbo && rm -rf node_modules"
+    "clean": "rm -rf .turbo && rm -rf node_modules",
+    "dev": "storybook dev -p 6006",
+    "preview-storybook": "serve storybook-static"
   },
   "dependencies": {
-    "@ui-modules/ui": "workspace:*",
     "@ui-modules/themes": "workspace:*",
+    "@ui-modules/ui": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@ui-modules/typescript-config": "workspace:*",
-    "@storybook/blocks": "^8.2.9",
+    "@storybook/addon-actions": "^8.3.4",
     "@storybook/addon-designs": "^8.0.3",
-    "@storybook/addon-actions": "^8.2.9",
-    "@storybook/addon-essentials": "^8.2.9",
-    "@storybook/addon-links": "^8.2.9",
-    "@storybook/react": "^8.2.9",
-    "@storybook/react-vite": "^8.2.9",
+    "@storybook/addon-essentials": "^8.3.4",
+    "@storybook/addon-links": "^8.3.4",
+    "@storybook/blocks": "^8.3.4",
+    "@storybook/react": "^8.3.4",
+    "@storybook/react-vite": "^8.3.4",
+    "@types/node": "^22.7.4",
+    "@ui-modules/typescript-config": "workspace:*",
     "@vitejs/plugin-react": "^4.3.1",
-    "serve": "^14.2.1",
-    "storybook": "^8.2.9",
+    "serve": "^14.2.3",
+    "storybook": "^8.3.4",
     "typescript": "^5.6.2",
-    "vite": "^5.4.0",
-    "vitest": "^2.1.1",
-    "@types/node": "^22.5.5"
+    "vite": "^5.4.8",
+    "vitest": "^2.1.1"
   }
 }

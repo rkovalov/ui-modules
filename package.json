@@ -2,30 +2,45 @@
   "name": "ui-modules",
   "private": true,
   "scripts": {
+    "build": "turbo build",
+    "changeset": "changeset",
     "check:dependencies": "check-dependency-version-consistency .",
     "check:spell": "cspell -c ./cspell/cspell.config.cjs",
     "check:types": "turbo check:types",
     "check:types:source": "turbo check:types:source",
-    "sort-package-json": "sort-package-json \"./package.json\" \"./packages/*/package.json\" \"./apps/*/package.json\"",
-    "preinstall": "npx only-allow pnpm",
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "test": "turbo test",
-    "test:watch": "turbo test:watch",
     "clean": "pnpm run clean:workspaces && rm -rf node_modules",
     "clean:workspaces": "turbo clean",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "prerelease": "turbo run build --filter=docs^...",
-    "release": "changeset publish",
+    "dev": "turbo dev",
     "format": "turbo format",
     "format:fix": "turbo format -- --write",
-    "lint": "turbo lint",
-    "lint:fix": "turbo lint -- --write",
     "format:lint": "turbo format:lint",
     "format:lint:fix": "turbo format:lint -- --write",
+    "preinstall": "npx only-allow pnpm",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint -- --write",
+    "prepare": "simple-git-hooks",
+    "prerelease": "turbo run build --filter=docs^...",
+    "release": "changeset publish",
+    "sort-package-json": "sort-package-json \"./package.json\" \"./packages/*/package.json\" \"./apps/*/package.json\"",
+    "test": "turbo test",
+    "test:watch": "turbo test:watch",
     "type-coverage": "type-coverage --detail",
-    "prepare": "simple-git-hooks"
+    "version-packages": "changeset version"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm nano-staged",
+    "commit-msg": "pnpm commitlint --edit"
+  },
+  "nano-staged": {
+    "*package.json": [
+      "biome check --write --no-errors-on-unmatched",
+      "pnpm check:dependencies",
+      "sort-package-json"
+    ],
+    "pnpm-lock.yaml": "pnpm dedupe --check",
+    "*.{js,ts,tsx,css,md,json}": [
+      "biome check --write --no-errors-on-unmatched"
+    ]
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.2",
@@ -42,15 +57,6 @@
     "turbo": "^2.1.2",
     "type-coverage": "^2.29.1",
     "typescript": "^5.6.2"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm nano-staged",
-    "commit-msg": "pnpm commitlint --edit"
-  },
-  "nano-staged": {
-    "package.json": ["biome check --write --no-errors-on-unmatched", "pnpm check:dependencies", "sort-package-json"],
-    "pnpm-lock.yaml": "pnpm dedupe --check",
-    "*.{js,ts,tsx,css,md,json}": ["biome check --write --no-errors-on-unmatched"]
   },
   "packageManager": "pnpm@9.9.0",
   "engines": {

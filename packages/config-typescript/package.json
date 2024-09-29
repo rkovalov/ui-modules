@@ -7,12 +7,18 @@
     "./react-app": "./react-app.json",
     "./nextjs": "./nextjs.json"
   },
-  "files": ["base.json", "nextjs.json", "react-library.json", "react-app.json", "package.json"],
+  "files": [
+    "base.json",
+    "nextjs.json",
+    "react-library.json",
+    "react-app.json",
+    "package.json"
+  ],
   "dependencies": {
     "typescript-plugin-css-modules": "^5.1.0"
   },
   "devDependencies": {
-    "@types/node": "^22.5.5",
+    "@types/node": "^22.7.4",
     "vitest": "^2.1.1"
   }
 }
