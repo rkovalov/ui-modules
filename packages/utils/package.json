@@ -16,7 +16,10 @@
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
@@ -38,7 +41,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.2",
     "autoprefixer": "^10.4.20",
-    "vitest": "^2.0.5",
+    "vitest": "^2.1.1",
     "@storybook/react": "^8.2.9",
     "@ui-modules/typescript-config": "workspace:*",
     "@ui-modules/biome-config": "workspace:*",

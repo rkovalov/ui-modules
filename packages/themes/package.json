@@ -13,7 +13,9 @@
     "./dark.css": "./dist/themes/dark/dark.css",
     "./light.css": "./dist/themes/light/light.css"
   },
-  "sideEffects": ["*.css"],
+  "sideEffects": [
+    "*.css"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -35,7 +37,7 @@
     "postcss-import": "^16.1.0",
     "tsup": "^8.2.4",
     "typescript": "^5.6.2",
-    "vitest": "^2.0.5",
+    "vitest": "^2.1.1",
     "@storybook/react": "^8.2.9",
     "@storybook/blocks": "^8.2.9",
     "@ui-modules/biome-config": "workspace:*",
