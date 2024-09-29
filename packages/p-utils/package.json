@@ -22,7 +22,8 @@
   "scripts": {
     "build": "tsup",
     "check:types": "tsc --noEmit",
-    "clean": "rm -rf node_modules",
+    "check:types:source": "tsc --noEmit --project tsconfig.source.json",
+    "clean": "rm -rf node_modules dist",
     "dev": "tsup --watch",
     "format": "biome format . ",
     "format:lint": "biome check .",
@@ -50,9 +51,10 @@
     "vitest": "^2.1.1"
   },
   "peerDependencies": {
-    "@types/react": "*",
-    "@types/react-dom": "*",
-    "react": ">=18"
+    "@types/react": ">=18",
+    "@types/react-dom": ">=18",
+    "react": ">=18",
+    "react-dom": ">=18"
   },
   "peerDependenciesMeta": {
     "@types/react": {

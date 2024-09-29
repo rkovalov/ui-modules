@@ -2,18 +2,13 @@
   "name": "@ui-modules/typescript-config",
   "version": "0.0.5",
   "private": false,
+  "type": "module",
   "exports": {
     "./react-library": "./react-library.json",
     "./react-app": "./react-app.json",
     "./nextjs": "./nextjs.json"
   },
-  "files": [
-    "base.json",
-    "nextjs.json",
-    "react-library.json",
-    "react-app.json",
-    "package.json"
-  ],
+  "files": ["base.json", "nextjs.json", "react-library.json", "react-app.json", "package.json"],
   "dependencies": {
     "typescript-plugin-css-modules": "^5.1.0"
   },
