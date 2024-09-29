@@ -55,10 +55,10 @@ importers:
     dependencies:
       '@ui-modules/themes':
         specifier: workspace:*
-        version: link:../../packages/themes
+        version: link:../../packages/p-themes
       '@ui-modules/ui':
         specifier: workspace:*
-        version: link:../../packages/ui
+        version: link:../../packages/p-ui
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -92,7 +92,7 @@ importers:
         version: 22.5.5
       '@ui-modules/typescript-config':
         specifier: workspace:*
-        version: link:../../packages/typescript-config
+        version: link:../../packages/config-typescript
       '@vitejs/plugin-react':
         specifier: ^4.3.1
         version: 4.3.1(vite@5.4.0(@types/node@22.5.5)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0))
@@ -112,13 +112,26 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)
 
-  packages/biome-config:
+  packages/config-biome:
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.9.2
         version: 1.9.2
 
-  packages/themes:
+  packages/config-typescript:
+    dependencies:
+      typescript-plugin-css-modules:
+        specifier: ^5.1.0
+        version: 5.1.0(ts-node@10.9.1(@types/node@22.5.5)(typescript@5.6.2))(typescript@5.6.2)
+    devDependencies:
+      '@types/node':
+        specifier: ^22.5.5
+        version: 22.5.5
+      vitest:
+        specifier: ^2.1.1
+        version: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)
+
+  packages/p-themes:
     dependencies:
       react:
         specifier: ^18.3.1
@@ -150,10 +163,10 @@ importers:
         version: 18.2.19
       '@ui-modules/biome-config':
         specifier: workspace:*
-        version: link:../biome-config
+        version: link:../config-biome
       '@ui-modules/typescript-config':
         specifier: workspace:*
-        version: link:../typescript-config
+        version: link:../config-typescript
       '@vitejs/plugin-react':
         specifier: ^4.3.1
         version: 4.3.1(vite@5.4.0(@types/node@22.5.5)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0))
@@ -173,20 +186,7 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)
 
-  packages/typescript-config:
-    dependencies:
-      typescript-plugin-css-modules:
-        specifier: ^5.1.0
-        version: 5.1.0(ts-node@10.9.1(@types/node@22.5.5)(typescript@5.6.2))(typescript@5.6.2)
-    devDependencies:
-      '@types/node':
-        specifier: ^22.5.5
-        version: 22.5.5
-      vitest:
-        specifier: ^2.1.1
-        version: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)
-
-  packages/ui:
+  packages/p-ui:
     dependencies:
       class-variance-authority:
         specifier: ^0.7.0
@@ -227,10 +227,10 @@ importers:
         version: 18.2.19
       '@ui-modules/biome-config':
         specifier: workspace:*
-        version: link:../biome-config
+        version: link:../config-biome
       '@ui-modules/typescript-config':
         specifier: workspace:*
-        version: link:../typescript-config
+        version: link:../config-typescript
       '@vitejs/plugin-react':
         specifier: ^4.3.1
         version: 4.3.1(vite@5.4.0(@types/node@22.5.5)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0))
@@ -253,7 +253,7 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)
 
-  packages/utils:
+  packages/p-utils:
     dependencies:
       date-fns:
         specifier: ^3.6.0
@@ -285,10 +285,10 @@ importers:
         version: 18.2.19
       '@ui-modules/biome-config':
         specifier: workspace:*
-        version: link:../biome-config
+        version: link:../config-biome
       '@ui-modules/typescript-config':
         specifier: workspace:*
-        version: link:../typescript-config
+        version: link:../config-typescript
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.41)
