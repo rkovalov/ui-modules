@@ -1,7 +1,7 @@
 import { dirname, join, resolve } from 'node:path';
-import ThemePackageJson from '../../../packages/themes/package.json';
-import UIPackageJson from '../../../packages/ui/package.json';
-import UtilsPackageJson from '../../../packages/utils/package.json';
+import ThemePackageJson from '../../../packages/p-themes/package.json';
+import UIPackageJson from '../../../packages/p-ui/package.json';
+import UtilsPackageJson from '../../../packages/p-utils/package.json';
 
 function getAbsolutePath(value) {
   return dirname(require.resolve(join(value, 'package.json')));
