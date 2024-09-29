@@ -1,6 +1,7 @@
 {
   "name": "ui-modules",
   "private": true,
+  "workspaces": ["apps/*", "packages/*"],
   "scripts": {
     "build": "turbo build",
     "changeset": "changeset",
