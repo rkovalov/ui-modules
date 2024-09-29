@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "storybook build --docs --output-dir dist",
+    "build:by:rsbuild:experimental": "COMPILER=rsbuild storybook build --docs --output-dir dist",
     "check:types": "tsc --noEmit",
     "clean": "rm -rf .turbo && rm -rf node_modules",
     "dev": "storybook dev -p 6006",
@@ -31,6 +32,10 @@
     "storybook": "^8.3.4",
     "typescript": "^5.6.2",
     "vite": "^5.4.8",
-    "vitest": "^2.1.1"
+    "vitest": "^2.1.1",
+    "@rsbuild/core": "^1.0.7",
+    "@rsbuild/plugin-react": "^1.0.2",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "storybook-react-rsbuild": "^0.1.0"
   }
 }

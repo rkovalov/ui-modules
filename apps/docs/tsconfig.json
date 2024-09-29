@@ -1,5 +1,8 @@
 {
   "extends": "@ui-modules/typescript-config/react-app",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "include": ["./", ".storybook/*"],
+  "exclude": ["dist", "node_modules"],
+  "compilerOptions": {
+    "baseUrl": "./"
+  }
 }

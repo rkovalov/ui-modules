@@ -16,10 +16,20 @@ const preview: Preview = {
     // storySort: {
     //   method: 'alphabetical',
     // },
-    storySort: (a, b) => {
+    storySort: (a: { title: string; id: string }, b: { title: string; id: string }) => {
       return a.title === b.title ? 0 : a.id.localeCompare(b.id, undefined, { numeric: true });
     },
   },
+
+  decorators: [
+    (Story) => (
+      <div className="main-story">
+        <Story />
+      </div>
+    ),
+  ],
+
+  tags: ['autodocs'],
 };
 
 export default preview;
