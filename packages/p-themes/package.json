@@ -22,7 +22,7 @@
     "format": "biome format .",
     "format:lint": "biome check .",
     "lint": "biome lint .",
-    "test": "vitest",
+    "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest --watch"
   },
@@ -42,6 +42,7 @@
     "postcss-import": "^16.1.0",
     "tsup": "^8.2.4",
     "typescript": "^5.6.2",
+    "jsdom": "^25.0.1",
     "vitest": "^2.1.1"
   },
   "peerDependencies": {

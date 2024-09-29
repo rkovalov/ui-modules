@@ -17,7 +17,7 @@
     "format:lint": "biome check .",
     "generate:component": "turbo gen react-component",
     "lint": "biome lint .",
-    "test": "vitest",
+    "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest --watch"
   },
@@ -39,7 +39,7 @@
     "@ui-modules/typescript-config": "workspace:*",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",
-    "jsdom": "^25.0.0",
+    "jsdom": "^25.0.1",
     "postcss-import": "^16.1.0",
     "tsup": "^8.2.4",
     "typescript": "^5.6.2",

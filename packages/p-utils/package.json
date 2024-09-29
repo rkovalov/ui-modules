@@ -28,7 +28,7 @@
     "format": "biome format . ",
     "format:lint": "biome check .",
     "lint": "biome lint .",
-    "test": "vitest",
+    "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest --watch"
   },
@@ -48,7 +48,12 @@
     "autoprefixer": "^10.4.20",
     "tsup": "^8.2.4",
     "typescript": "^5.6.2",
-    "vitest": "^2.1.1"
+    "vitest": "^2.1.1",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "jsdom": "^25.0.1",
+    "postcss-import": "^16.1.0"
   },
   "peerDependencies": {
     "@types/react": ">=18",
