@@ -39,21 +39,22 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.2",
     "@storybook/react": "^8.3.4",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
     "@turbo/gen": "^1.12.4",
     "@types/node": "^22.7.4",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "@ui-modules/biome-config": "workspace:*",
     "@ui-modules/typescript-config": "workspace:*",
+    "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",
+    "jsdom": "^25.0.1",
+    "postcss-import": "^16.1.0",
     "tsup": "^8.2.4",
     "typescript": "^5.6.2",
     "vitest": "^2.1.1",
-    "@testing-library/jest-dom": "^6.5.0",
-    "@testing-library/react": "^16.0.1",
-    "@vitejs/plugin-react": "^4.3.1",
-    "jsdom": "^25.0.1",
-    "postcss-import": "^16.1.0"
+    "vitest-fail-on-console": "^0.7.1"
   },
   "peerDependencies": {
     "@types/react": ">=18",
