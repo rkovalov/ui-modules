@@ -209,6 +209,9 @@ importers:
       vitest:
         specifier: ^2.1.1
         version: 2.1.1(@types/node@22.7.4)(@vitest/ui@2.1.1)(jsdom@25.0.1)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1)
+      vitest-fail-on-console:
+        specifier: ^0.7.1
+        version: 0.7.1(vite@5.4.8(@types/node@22.7.4)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1))(vitest@2.1.1(@types/node@22.7.4)(@vitest/ui@2.1.1)(jsdom@25.0.1)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1))
 
   packages/p-ui:
     dependencies:
@@ -279,6 +282,9 @@ importers:
       vitest:
         specifier: ^2.1.1
         version: 2.1.1(@types/node@22.7.4)(@vitest/ui@2.1.1)(jsdom@25.0.1)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1)
+      vitest-fail-on-console:
+        specifier: ^0.7.1
+        version: 0.7.1(vite@5.4.8(@types/node@22.7.4)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1))(vitest@2.1.1(@types/node@22.7.4)(@vitest/ui@2.1.1)(jsdom@25.0.1)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1))
 
   packages/p-utils:
     dependencies:
@@ -346,6 +352,9 @@ importers:
       vitest:
         specifier: ^2.1.1
         version: 2.1.1(@types/node@22.7.4)(@vitest/ui@2.1.1)(jsdom@25.0.1)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1)
+      vitest-fail-on-console:
+        specifier: ^0.7.1
+        version: 0.7.1(vite@5.4.8(@types/node@22.7.4)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1))(vitest@2.1.1(@types/node@22.7.4)(@vitest/ui@2.1.1)(jsdom@25.0.1)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1))
 
 packages:
 
@@ -5623,6 +5632,12 @@ packages:
         optional: true
       terser:
         optional: true
+
+  vitest-fail-on-console@0.7.1:
+    resolution: {integrity: sha512-/PjuonFu7CwUVrKaiQPIGXOtiEv2/Gz3o8MbLmovX9TGDxoRCctRC8CA9zJMRUd6AvwGu/V5a3znObTmlPNTgw==}
+    peerDependencies:
+      vite: '>=4.5.2'
+      vitest: '>=0.26.2'
 
   vitest@2.1.1:
     resolution: {integrity: sha512-97We7/VC0e9X5zBVkvt7SGQMGrRtn3KtySFQG5fpaMlS+l62eeXRQO633AYhSTC3z7IMebnPPNjGXVGNRFlxBA==}
@@ -11955,6 +11970,12 @@ snapshots:
       sass: 1.77.8
       stylus: 0.62.0
       terser: 5.34.1
+
+  vitest-fail-on-console@0.7.1(vite@5.4.8(@types/node@22.7.4)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1))(vitest@2.1.1(@types/node@22.7.4)(@vitest/ui@2.1.1)(jsdom@25.0.1)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1)):
+    dependencies:
+      chalk: 5.3.0
+      vite: 5.4.8(@types/node@22.7.4)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1)
+      vitest: 2.1.1(@types/node@22.7.4)(@vitest/ui@2.1.1)(jsdom@25.0.1)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1)
 
   vitest@2.1.1(@types/node@22.7.4)(@vitest/ui@2.1.1)(jsdom@25.0.1)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(stylus@0.62.0)(terser@5.34.1):
     dependencies:
